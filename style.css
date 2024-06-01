@@ -1,0 +1,40 @@
+
+body{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+.load{
+ position: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100px;
+ width: 100px;
+ border-radius: 50%;
+ background-color: white;
+ border: 5px solid rgb(112, 169, 216);
+ border-top: 5px solid white;
+ 
+ animation: animate 1s ease-in-out infinite normal;
+}
+
+@keyframes animate{
+0%{
+    transform:rotate(0deg);
+}
+100%{
+transform: rotate(360deg);
+}
+}
+
+
+.loading{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    margin-top: -10%;
+    color: #555555;
+}
+
